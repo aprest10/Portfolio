@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
+<!------------------- Head -------------------->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width = device-width, initial-scale = 1.0">
@@ -11,6 +11,7 @@
 
 
 <body>
+    <!------------------- Nav -------------------->
     <div class="nav-container">
         <header>
             <a href="index.html" class="logo">Andrew Preston</a>
@@ -32,17 +33,17 @@
             </ul>
         </div>
     </div>
-
+    <!------------------- Hero -------------------->
     <div class="hero">
         <div class="content">
-            <h1>Beautifully Crafted Web Experiences</h1>
+            <h1>Software Engineer</h1>
 
             <div class="meet">
-                <span>👇</span>
 
                 <p>Meet Andrew Preston</p>
             </div>
 
+            <!------------------- Scroll icon -------------------->
             <svg class="scroll"
                  width="40"
                  height="77"
@@ -80,6 +81,7 @@
             </svg>
         </div>
 
+        <!------------------- Hero-block -------------------->
         <svg class="hero-design"
              width="686"
              height="688"
@@ -106,6 +108,7 @@
         </svg>
     </div>
 
+    <!------------------- Featured Project -------------------->
     <section class="featured">
         <div class="left">
             <div class="inner transition2">
@@ -120,6 +123,7 @@
         <img class="right transition2" src="images/project-1.png" alt="featured project">
     </section>
 
+    <!------------------- About -------------------->
     <section class="skills">
         <div class="skills-container">
             <ul>
@@ -156,6 +160,7 @@
         </div>
     </section>
 
+    <!------------------- Portfolio -------------------->
     <section class="portfolio">
         <div class="portfolio-container transition3">
             <div class="portfolio-left">
@@ -194,9 +199,14 @@
         </div>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <!------------------- CDN -------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+            integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+            crossorigin="anonymous">
+    </script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
 
+    <!------------------- Animations -------------------->
     <script>
         gsap.registerPlugin(ScrollTrigger);
         const tl = gsap.timeline();

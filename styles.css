@@ -20,7 +20,7 @@ img {
 }
 
 .nav-container {
-  background: #6700ee;
+  background: #0c1b31;
 }
 .nav-container a {
   color: #ffffff;
@@ -48,7 +48,7 @@ header ul a {
 }
 
 .hero {
-  background: #6e00ff;
+  background: #0c1b31;
   color: #ffffff;
   display: grid;
   text-align: center;
