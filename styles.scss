@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
+// mobile-first styling: all scss is for mobile devices until media quires
+
+:root { // color variables
+  --primary-color: #0c1b31;
+  --accent-color: #63f6d3;
+  --p_font-color: #858dab;
+  --a_font-color: #c5d0ef;
+}
+
 body {
   height: 100vh;
   margin: 0;
@@ -20,11 +29,21 @@ img {
   width: 100%;
 }
 
-.nav-container {
-  background: #0c1b31;
+.nav-container { // navigation bar
+  background-color: var(--primary-color);
 
-  a {
-    color: #ffffff;
+  a { // links within nav bar
+    color: var(--a_font-color);
+  }
+
+  a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+  }
+
+  p { // paragraph tags within nav bar
+    display: inline;
+    color: var(--accent-color);
   }
 }
 
@@ -41,9 +60,12 @@ header {
   ul {
     display: flex;
 
-    a {
-      display: block;
+    li {
       padding: 0 1em;
+    }
+
+    a {
+      display: inline-block;
     }
   }
 }

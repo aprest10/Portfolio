@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+:root {
+  --primary-color: #0c1b31;
+  --accent-color: #63f6d3;
+  --p_font-color: #858dab;
+  --a_font-color: #c5d0ef;
+}
+
 body {
   height: 100vh;
   margin: 0;
@@ -20,10 +27,18 @@ img {
 }
 
 .nav-container {
-  background: #0c1b31;
+  background-color: var(--primary-color);
 }
 .nav-container a {
-  color: #ffffff;
+  color: var(--a_font-color);
+}
+.nav-container a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+.nav-container p {
+  display: inline;
+  color: var(--accent-color);
 }
 
 header {
@@ -38,9 +53,11 @@ header .logo {
 header ul {
   display: flex;
 }
-header ul a {
-  display: block;
+header ul li {
   padding: 0 1em;
+}
+header ul a {
+  display: inline-block;
 }
 
 .social-header, .hero-design {
