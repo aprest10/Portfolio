@@ -32,6 +32,7 @@ img {
 }
 .nav-container a {
   color: var(--a_font-color);
+  display: inline;
 }
 .nav-container a:hover {
   color: var(--accent-color);
@@ -40,6 +41,12 @@ img {
 .nav-container p {
   display: inline;
   color: var(--accent-color);
+}
+
+.logo {
+  display: inline-flex;
+  width: 7em;
+  justify-content: left;
 }
 
 header {
@@ -232,7 +239,7 @@ section {
     background: unset;
   }
   .nav-container header {
-    background: #6700ee;
+    background: var(--primary-color);
   }
 
   header {
@@ -267,7 +274,7 @@ section {
     padding: 0;
   }
   .hero .content {
-    background: #6e00ff;
+    background: var(--primary-color);
     padding: 6em 8em 6em 4em;
     text-align: left;
   }

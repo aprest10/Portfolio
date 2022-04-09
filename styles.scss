@@ -35,6 +35,7 @@ img {
 
   a { // links within nav bar
     color: var(--a_font-color);
+    display: inline;
   }
 
   a:hover {
@@ -46,6 +47,12 @@ img {
     display: inline;
     color: var(--accent-color);
   }
+}
+
+.logo {
+  display: inline-flex;
+  width: 7em;
+  justify-content: left;
 }
 
 header {
@@ -253,7 +260,7 @@ section {
     background: unset;
 
     header {
-      background: #6700ee;
+      background: var(--primary-color);
     }
   }
 
@@ -291,7 +298,7 @@ section {
     padding: 0;
 
     .content {
-      background: #6e00ff;
+      background: var(--primary-color);
       padding: 6em 8em 6em 4em;
       text-align: left;
 
