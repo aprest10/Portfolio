@@ -1,0 +1,19 @@
+<svg width="148"
+     height="170"
+     viewBox="0 0 148 170"
+     fill="none"
+     xmlns="http://www.w3.org/2000/svg">
+    <rect width="148"
+          height="170"
+          fill="#E5E5E5"/>
+    <path id="A"
+          d="M90.488 104.536H55.608L48.568 127H37.624L66.296
+          38.872H80.504L109.176 127H97.528L90.488 104.536ZM58.488
+          95.32H87.608L73.144 48.216L58.488 95.32Z"
+          fill="#64FFDA"/>
+    <path id="Sides"
+          d="M4.88784 45.0981L74 5.19615L143.112 45.0981V124.902L74
+          164.804L4.88784 124.902L4.88784 45.0981Z"
+          stroke="#64FFDA"
+          stroke-width="9"/>
+</svg>
