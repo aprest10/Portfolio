@@ -1,15 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap");
 :root {
-  --primary-color: #0c1b31;
-  --accent-color: #63f6d3;
-  --p_font-color: #858dab;
-  --a_font-color: #c5d0ef;
+  --primary-color: #0a192f;
+  --accent-color: #64ffda;
+  --p_font-color: #8892b0;
+  --a_font-color: #ccd6f6;
 }
 
 body {
   height: 100vh;
   margin: 0;
-  font-family: "Poppins", arial, sans-serif;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", arial, sans-serif;
 }
 
 ul {
@@ -65,23 +66,28 @@ header ul a {
 }
 
 .hero {
-  background: #0c1b31;
-  color: #ffffff;
+  background: var(--primary-color);
   display: grid;
   text-align: center;
   padding: 4em;
+}
+.hero p {
+  color: var(--accent-color);
+}
+.hero h1 {
+  color: var(--a_font-color);
+}
+.hero h2 {
+  color: var(--p_font-color);
 }
 
 .meet {
   display: flex;
   margin: 0 auto;
   width: 200px;
-  font-weight: bold;
-  color: #ff64cb;
 }
-.meet span {
-  margin-top: 1em;
-  margin-right: 0.5em;
+.meet p {
+  color: var(--p_font-color);
 }
 
 .scroll {
