@@ -82,11 +82,10 @@ header ul a {
 .hero h2 {
   color: var(--p_font-color);
 }
-
-.meet p {
+.hero .meet p {
   display: flex;
   margin: 0 auto;
-  width: 20em;
+  max-width: 50em;
   color: var(--p_font-color);
 }
 

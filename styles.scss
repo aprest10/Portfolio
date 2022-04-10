@@ -94,13 +94,13 @@ header {
   h2 {
     color: var(--p_font-color);
   }
-}
 
-.meet p {
-  display: flex;
-  margin: 0 auto;
-  width: 20em;
-  color: var(--p_font-color);
+  .meet p {
+     display: flex;
+     margin: 0 auto;
+    max-width: 50em;
+     color: var(--p_font-color);
+   }
 }
 
 .scroll {
