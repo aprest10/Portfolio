@@ -14,6 +14,7 @@ body {
   height: 100vh;
   margin: 0;
   font-family: "SF Mono", "Fira Code", "Fira Mono", arial, sans-serif ;
+  background: var(--primary-color);
 }
 
 ul {
@@ -31,8 +32,6 @@ img {
 }
 
 .nav-container { // navigation bar
-  background-color: var(--primary-color);
-
   a { // links within nav bar
     color: var(--a_font-color);
     display: inline;
@@ -78,7 +77,6 @@ header {
 }
 
 .hero {
-  background: var(--primary-color);
   display: grid;
   text-align: center;
   padding: 4em;
@@ -96,10 +94,11 @@ header {
   }
 
   .meet p {
-     display: flex;
-     margin: 0 auto;
+    display: flex;
+    margin: 0 auto;
     max-width: 50em;
-     color: var(--p_font-color);
+
+    color: var(--p_font-color);
    }
 }
 
@@ -111,6 +110,7 @@ header {
 section {
   padding: 4em 2em;
   text-align: center;
+  background: var(--primary-color);
 }
 
 .featured {
@@ -153,10 +153,6 @@ section {
   font-weight: 500;
 }
 
-.skills {
-  background: #ff64cb;
-}
-
 .skills-container ul li {
   background: #ffffff;
   padding: 2em;
@@ -189,10 +185,6 @@ section {
   .skill-desc { //----------------------// featured-desc
     margin-bottom: 2em;
   }
-}
-
-.portfolio {
-  background: #f7f7f7;
 }
 
 .portfolio-container {
@@ -250,10 +242,6 @@ section {
     display: grid;
     grid-template-columns: 66% auto;
     background: unset;
-
-    header {
-      background: var(--primary-color);
-    }
   }
 
   header {
@@ -290,7 +278,6 @@ section {
     padding: 0;
 
     .content {
-      background: var(--primary-color);
       padding: 6em 8em 6em 4em;
       text-align: left;
 
