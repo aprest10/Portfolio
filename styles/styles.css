@@ -99,6 +99,7 @@ section {
 
 .featured {
   position: relative;
+  background-color: #fff !important;
 }
 
 .featured::before {
