@@ -112,7 +112,8 @@ header {
   cursor:pointer;
   color: $primary;
   font-size:17px;
-  padding:16px 42px;
+  //padding:16px 42px;
+  padding: 1em 2em;
   text-decoration:none;
 }
 
@@ -136,11 +137,13 @@ header {
   cursor:pointer;
   color: $accent;
   font-size:17px;
-  padding:16px 42px;
+  //padding:16px 42px;
+  padding: 0 1em;
   text-decoration:none;
   position: relative;
 
-  .git_btn {
+  .btn_pic {
+    display: none;
     height: 18px;
     width: 18px;
     position: absolute;
@@ -151,7 +154,6 @@ header {
 
   p {
     border: none;
-    margin: 0 0 0 1em;
     font-size: 17px;
   }
 }
@@ -289,6 +291,18 @@ section {
 }
 
 @media only screen and (min-width: 800px) {
+  .other_btn {
+    padding: 1em 2em;
+
+    .btn_pic {
+      display: unset;
+    }
+
+    p {
+      margin: 0 0 0 1em;
+    }
+  }
+
   .featured, .portfolio {
     text-align: left;
   }
@@ -390,7 +404,7 @@ section {
 
   .hero-design {
     display: unset;
-    margin-left: -50%;
+    margin-left: -20%;
     margin-top: 15%;
     width: 100%;
   }
@@ -433,21 +447,17 @@ section {
   }
 
   .hero .content {
-    padding: 9em 20em 6em 20em;
+    position: relative;
+    padding: 9em 10em 6em 8em;
   }
 
-}
-
-.circle {
-  animation: circleAnim 2s infinite alternate-reverse;
-}
-
-@keyframes circleAnim {
-  from {
-    transform: translate(262px, 798px);
-    z-index: 5;
+  .meet {
+    position: absolute;
+    justify-content: left;
   }
-  to {
-    transform: translate(262px, 830px);
+
+  .buttons {
+    position: absolute;
+    margin: 5em 0 0 0;
   }
 }
