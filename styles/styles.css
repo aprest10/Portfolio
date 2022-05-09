@@ -101,12 +101,6 @@ header ul a {
   border: 2px solid #64ffda;
 }
 
-.cta_btn:focus {
-  background-color: rgba(100, 255, 218, 0.1);
-  color: #64ffda;
-  border: 2px solid #64ffda;
-}
-
 .other_btn {
   background-color: transparent;
   border-radius: 42px;
@@ -138,14 +132,6 @@ header ul a {
   border: 2px solid #64ffda;
 }
 .other_btn:hover p {
-  color: #64ffda;
-}
-
-.other_btn:focus {
-  background-color: rgba(100, 255, 218, 0.1);
-  border: 2px solid #64ffda;
-}
-.other_btn:focus p {
   color: #64ffda;
 }
 

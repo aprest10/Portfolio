@@ -122,11 +122,11 @@ header {
   border: 2px solid $accent;
 }
 
-.cta_btn:focus {
-  background-color: rgba(100, 255, 218, 0.10);
-  color: $accent;
-  border: 2px solid $accent;
-}
+//.cta_btn:focus {
+//  background-color: rgba(100, 255, 218, 0.10);
+//  color: $accent;
+//  border: 2px solid $accent;
+//}
 
 .other_btn {
   background-color: transparent;
@@ -169,18 +169,18 @@ header {
   }
 }
 
-.other_btn:focus {
-  background-color: rgba(100, 255, 218, 0.10);
-  border: 2px solid $accent;
-
-  //.git_btn {
-  //  filter: invert(8%) sepia(18%) saturate(4183%) hue-rotate(189deg) brightness(92%) contrast(98%);
-  //}
-
-  p {
-    color: $accent;
-  }
-}
+//.other_btn:focus {
+//  background-color: rgba(100, 255, 218, 0.10);
+//  border: 2px solid $accent;
+//
+//  //.git_btn {
+//  //  filter: invert(8%) sepia(18%) saturate(4183%) hue-rotate(189deg) brightness(92%) contrast(98%);
+//  //}
+//
+//  p {
+//    color: $accent;
+//  }
+//}
 
 
 //.git_btn:hover {
