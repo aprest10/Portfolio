@@ -81,7 +81,8 @@ header ul a {
 
 .buttons {
   padding: 1em 0 0 0;
-  margin: 0 0 0 -4em;
+  overflow: auto;
+  white-space: nowrap;
 }
 
 .cta_btn {
