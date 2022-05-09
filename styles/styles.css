@@ -91,7 +91,7 @@ header ul a {
   cursor: pointer;
   color: #0a192f;
   font-size: 17px;
-  padding: 1em 2em;
+  padding: 1em 1em;
   text-decoration: none;
 }
 
@@ -221,6 +221,10 @@ section {
 }
 
 @media only screen and (min-width: 800px) {
+  .cta_btn {
+    padding: 1em 2em;
+  }
+
   .other_btn {
     padding: 1em 2em;
   }
