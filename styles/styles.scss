@@ -3,18 +3,16 @@
 
 // mobile-first styling: all scss is for mobile devices until media quires
 
-:root { // color variables
-  --primary-color: #0a192f;
-  --accent-color: #64ffda;
-  --p_font-color: #8892b0;
-  --a_font-color: #ccd6f6;
-}
+$primary: #0a192f;
+$accent: #64ffda;
+$p_font: #8892b0;
+$a_font: #ccd6f6;
 
 body {
   height: 100vh;
   margin: 0;
   font-family: "SF Mono", "Fira Code", "Fira Mono", arial, sans-serif ;
-  background: var(--primary-color);
+  background-color: $primary;
 }
 
 ul {
@@ -33,18 +31,18 @@ img {
 
 .nav-container { // navigation bar
   a { // links within nav bar
-    color: var(--a_font-color);
+    color: $a_font;
     display: inline;
   }
 
   a:hover {
-    color: var(--accent-color);
+    color: $accent;
     text-decoration: underline;
   }
 
   p { // paragraph tags within nav bar
     display: inline;
-    color: var(--accent-color);
+    color: $accent;
   }
 }
 
@@ -82,15 +80,15 @@ header {
   padding: 4em;
 
   p {
-    color: var(--accent-color);
+    color: $accent;
   }
 
   h1 {
-    color: var(--a_font-color);
+    color: $a_font;
   }
 
   h2 {
-    color: var(--p_font-color);
+    color: $p_font;
   }
 
   .meet p {
@@ -98,19 +96,111 @@ header {
     margin: 0 auto;
     max-width: 50em;
 
-    color: var(--p_font-color);
+    color: $p_font;
    }
 }
 
-.scroll {
-  width: 30px;
-  margin-top: 2em;
+.buttons {
+  padding: 1em 0 0 0;
 }
+
+.cta_btn {
+  background-color: $accent;
+  border-radius:42px;
+  border:2px solid $accent;
+  display:inline-block;
+  cursor:pointer;
+  color: $primary;
+  font-size:17px;
+  padding:16px 42px;
+  text-decoration:none;
+}
+
+.cta_btn:hover {
+  background-color: rgba(100, 255, 218, 0.10);
+  color: $accent;
+  border: 2px solid $accent;
+}
+
+.cta_btn:focus {
+  background-color: rgba(100, 255, 218, 0.10);
+  color: $accent;
+  border: 2px solid $accent;
+}
+
+.other_btn {
+  background-color: transparent;
+  border-radius:42px;
+  border:2px solid $accent;
+  display:inline-block;
+  cursor:pointer;
+  color: $accent;
+  font-size:17px;
+  padding:16px 42px;
+  text-decoration:none;
+  position: relative;
+
+  .git_btn {
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    filter: invert(78%) sepia(52%) saturate(409%) hue-rotate(106deg) brightness(102%) contrast(102%);
+  }
+
+  p {
+    border: none;
+    margin: 0 0 0 1em;
+    font-size: 17px;
+  }
+}
+
+.other_btn:hover {
+  background-color: rgba(100, 255, 218, 0.10);
+  border: 2px solid $accent;
+
+  //.git_btn {
+  //  filter: invert(8%) sepia(18%) saturate(4183%) hue-rotate(189deg) brightness(92%) contrast(98%);
+  //}
+
+  p {
+    color: $accent;
+  }
+}
+
+.other_btn:focus {
+  background-color: rgba(100, 255, 218, 0.10);
+  border: 2px solid $accent;
+
+  //.git_btn {
+  //  filter: invert(8%) sepia(18%) saturate(4183%) hue-rotate(189deg) brightness(92%) contrast(98%);
+  //}
+
+  p {
+    color: $accent;
+  }
+}
+
+
+//.git_btn:hover {
+//  filter: invert(8%) sepia(18%) saturate(4183%) hue-rotate(189deg) brightness(92%) contrast(98%);
+//}
+
+//.other_btn:before {
+//  content: url("images/github.svg");
+//  color: $accent;
+//}
+
+//.scroll {
+//  width: 30px;
+//  margin-top: 2em;
+//}
 
 section {
   padding: 4em 2em;
   text-align: center;
-  background: var(--primary-color);
+  background: $primary;
 }
 
 .featured {
@@ -186,6 +276,11 @@ section {
   .skill-desc { //----------------------// featured-desc
     margin-bottom: 2em;
   }
+}
+
+.portfolio {
+  background-color: #fff;
+  margin: 4em 0 0 0;
 }
 
 .portfolio-container {
