@@ -3,8 +3,30 @@
 body {
   height: 100vh;
   margin: 0;
-  font-family: "SF Mono", "Fira Code", "Fira Mono", monospace, arial, sans-serif;
-  background-color: #0a192f;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", monospace;
+  background-color: #f5ced0;
+}
+
+.block1, .block4 {
+  fill: #da0510;
+}
+
+.block2 {
+  fill: #5b4b4c;
+  opacity: 0.5;
+}
+
+.block3, .block6 {
+  fill: #e4bcbe;
+}
+
+.block5, .block8 {
+  fill: #5b4b4c;
+}
+
+.block7 {
+  fill: #da0510;
+  opacity: 0.7;
 }
 
 ul {
@@ -22,16 +44,16 @@ img {
 }
 
 .nav-container a {
-  color: #ccd6f6;
+  color: #000;
   display: inline;
 }
 .nav-container a:hover {
-  color: #64ffda;
+  color: #da0510;
   text-decoration: underline;
 }
 .nav-container p {
   display: inline;
-  color: #64ffda;
+  color: #da0510;
 }
 
 header {
@@ -43,6 +65,7 @@ header .logo {
   display: inline-flex;
   width: 3em;
   margin: -2em 0 0 0;
+  filter: brightness(0) saturate(100) invert(14%) sepia(97%) saturate(4965%) hue-rotate(351deg) brightness(83%) contrast(107%);
 }
 header ul {
   display: flex;
@@ -62,54 +85,55 @@ header ul a {
   display: grid;
   text-align: center;
   padding: 4em;
+  margin: 6em 0 0 0;
 }
 .hero p {
-  color: #64ffda;
+  color: #da0510;
 }
 .hero h1 {
-  color: #ccd6f6;
+  color: #000;
 }
 .hero h2 {
-  color: #8892b0;
+  color: #000;
 }
 .hero .meet p {
   display: flex;
   margin: 0 auto;
   max-width: 50em;
-  color: #8892b0;
+  color: #5b4b4c;
 }
 
-.buttons {
+.contact_btn_group {
   padding: 1em 0 0 0;
   overflow: auto;
   white-space: nowrap;
 }
 
 .cta_btn {
-  background-color: #64ffda;
-  border-radius: 42px;
-  border: 2px solid #64ffda;
+  background-color: #da0510;
+  border-radius: 2em;
+  border: 2px solid #da0510;
   display: inline-block;
   cursor: pointer;
-  color: #0a192f;
+  color: #f5ced0;
   font-size: 17px;
   padding: 1em 1em;
   text-decoration: none;
 }
 
 .cta_btn:hover {
-  background-color: rgba(100, 255, 218, 0.1);
-  color: #64ffda;
-  border: 2px solid #64ffda;
+  background-color: #e4bcbe;
+  color: #da0510;
+  border: 2px solid #da0510;
 }
 
 .other_btn {
   background-color: transparent;
-  border-radius: 42px;
-  border: 2px solid #64ffda;
+  border-radius: 2em;
+  border: 2px solid #da0510;
   display: inline-block;
   cursor: pointer;
-  color: #64ffda;
+  color: #da0510;
   font-size: 17px;
   padding: 0 1em;
   text-decoration: none;
@@ -122,7 +146,7 @@ header ul a {
   position: absolute;
   left: 1em;
   top: 1em;
-  filter: invert(78%) sepia(52%) saturate(409%) hue-rotate(106deg) brightness(102%) contrast(102%);
+  filter: invert(14%) sepia(97%) saturate(4965%) hue-rotate(351deg) brightness(83%) contrast(107%);
 }
 .other_btn p {
   border: none;
@@ -130,46 +154,56 @@ header ul a {
 }
 
 .other_btn:hover {
-  background-color: rgba(100, 255, 218, 0.1);
-  border: 2px solid #64ffda;
+  background-color: #e4bcbe;
+  border: 2px solid #da0510;
 }
 .other_btn:hover p {
-  color: #64ffda;
+  color: #da0510;
+}
+
+.project_btn_group {
+  margin: 0 0 2em 0;
+}
+
+.project_btn {
+  background-color: transparent;
+  border-radius: 2em;
+  border: 2px solid #da0510;
+  display: inline-block;
+  cursor: pointer;
+  color: #da0510;
+  font-size: 17px;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+.project_btn:hover {
+  color: #000;
+  border: 2px solid #000;
 }
 
 section {
   padding: 4em 2em;
   text-align: center;
-  background: #0a192f;
 }
 
 .featured {
   position: relative;
-  background-color: #fff !important;
-}
-
-.featured::before {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: #e5d5fa;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  background-color: #e4bcbe;
+  margin: 2em;
+  border-radius: 1em;
 }
 
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
-  color: #6e00ff;
+  color: #da0510;
   letter-spacing: 0.2em;
   font-size: 0.85em;
 }
 
 .featured-title {
-  color: #000000;
+  color: #000;
   font-weight: bold;
   font-size: 1.3em;
   margin-top: -0.4em;
@@ -177,7 +211,7 @@ section {
 }
 
 .featured-desc {
-  color: #252525;
+  color: #5b4b4c;
   margin-bottom: 3em;
   font-size: 0.9em;
   line-height: 1.8em;
@@ -185,7 +219,7 @@ section {
 }
 
 .skills-container ul li {
-  background: #ffffff;
+  background: #e4bcbe;
   padding: 2em;
   border-radius: 1em;
   margin-bottom: 1em;
@@ -213,13 +247,14 @@ section {
 }
 
 .portfolio {
-  background-color: #fff;
   margin: 4em 0 0 0;
 }
 
 .portfolio-container {
+  background-color: #e4bcbe;
   border-radius: 1em;
   margin-bottom: 2em;
+  padding: 2em;
 }
 
 @media only screen and (min-width: 800px) {
@@ -278,7 +313,7 @@ section {
 }
 @media only screen and (min-width: 1050px) {
   .hero {
-    height: 90vh;
+    height: 85vh;
   }
 
   .nav-container {
@@ -384,7 +419,7 @@ section {
     justify-content: left;
   }
 
-  .buttons {
+  .contact_btn_group {
     position: absolute;
     margin: 5em 0 0 0;
   }

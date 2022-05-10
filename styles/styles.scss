@@ -3,16 +3,46 @@
 
 // mobile-first styling: all scss is for mobile devices until media quires
 
-$primary: #0a192f;
-$accent: #64ffda;
-$p_font: #8892b0;
-$a_font: #ccd6f6;
+//$primary: #0a192f;
+////$primary: #6e00ff;
+//$accent: #64ffda;
+//$p_font: #8892b0;
+//$a_font: #ccd6f6;
+
+$bg: #f5ced0;
+$primary: #e4bcbe;
+$secondary: #c9a2a4;
+$accent: #da0510;
+$font_primary: #000;
+$font_secondary: #5b4b4c;
 
 body {
   height: 100vh;
   margin: 0;
-  font-family: "SF Mono", "Fira Code", "Fira Mono", monospace, arial, sans-serif ;
-  background-color: $primary;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", monospace;
+  background-color: $bg;
+}
+
+.block1, .block4 {
+  fill: $accent;
+}
+
+.block2 {
+  fill: $font_secondary;
+  opacity: .5;
+}
+
+.block3, .block6 {
+  fill: $primary;
+}
+
+.block5, .block8 {
+  fill: $font_secondary;
+}
+
+.block7 {
+  fill: $accent;
+  opacity: .7;
 }
 
 ul {
@@ -31,7 +61,7 @@ img {
 
 .nav-container { // navigation bar
   a { // links within nav bar
-    color: $a_font;
+    color: $font_primary;
     display: inline;
   }
 
@@ -55,6 +85,7 @@ header {
     display: inline-flex;
     width: 3em;
     margin: -2em 0 0 0;
+    filter: brightness(0) saturate(100) invert(14%) sepia(97%) saturate(4965%) hue-rotate(351deg) brightness(83%) contrast(107%);
   }
 
   ul {
@@ -78,17 +109,18 @@ header {
   display: grid;
   text-align: center;
   padding: 4em;
+  margin: 6em 0 0 0;
 
   p {
     color: $accent;
   }
 
   h1 {
-    color: $a_font;
+    color: $font_primary;
   }
 
   h2 {
-    color: $p_font;
+    color: $font_primary;
   }
 
   .meet p {
@@ -96,11 +128,11 @@ header {
     margin: 0 auto;
     max-width: 50em;
 
-    color: $p_font;
+    color: $font_secondary;
    }
 }
 
-.buttons {
+.contact_btn_group {
   padding: 1em 0 0 0;
   overflow: auto;
   white-space: nowrap;
@@ -108,11 +140,11 @@ header {
 
 .cta_btn {
   background-color: $accent;
-  border-radius:42px;
+  border-radius:2em;
   border:2px solid $accent;
   display:inline-block;
   cursor:pointer;
-  color: $primary;
+  color: $bg;
   font-size:17px;
   //padding:16px 42px;
   padding: 1em 1em;
@@ -120,20 +152,14 @@ header {
 }
 
 .cta_btn:hover {
-  background-color: rgba(100, 255, 218, 0.10);
+  background-color: $primary;
   color: $accent;
   border: 2px solid $accent;
 }
 
-//.cta_btn:focus {
-//  background-color: rgba(100, 255, 218, 0.10);
-//  color: $accent;
-//  border: 2px solid $accent;
-//}
-
 .other_btn {
   background-color: transparent;
-  border-radius:42px;
+  border-radius:2em;
   border:2px solid $accent;
   display:inline-block;
   cursor:pointer;
@@ -151,7 +177,7 @@ header {
     position: absolute;
     left: 1em;
     top: 1em;
-    filter: invert(78%) sepia(52%) saturate(409%) hue-rotate(106deg) brightness(102%) contrast(102%);
+    filter: invert(14%) sepia(97%) saturate(4965%) hue-rotate(351deg) brightness(83%) contrast(107%);
   }
 
   p {
@@ -161,79 +187,73 @@ header {
 }
 
 .other_btn:hover {
-  background-color: rgba(100, 255, 218, 0.10);
+  background-color: $primary;
   border: 2px solid $accent;
-
-  //.git_btn {
-  //  filter: invert(8%) sepia(18%) saturate(4183%) hue-rotate(189deg) brightness(92%) contrast(98%);
-  //}
 
   p {
     color: $accent;
   }
 }
 
-//.other_btn:focus {
-//  background-color: rgba(100, 255, 218, 0.10);
-//  border: 2px solid $accent;
-//
-//  //.git_btn {
-//  //  filter: invert(8%) sepia(18%) saturate(4183%) hue-rotate(189deg) brightness(92%) contrast(98%);
-//  //}
-//
-//  p {
-//    color: $accent;
-//  }
-//}
+.project_btn_group {
+  margin: 0 0 2em 0;
+}
 
+.project_btn {
+  background-color: transparent;
+  border-radius:2em;
+  border:2px solid $accent;
+  display:inline-block;
+  cursor:pointer;
+  color: $accent;
+  font-size:17px;
+  //padding:16px 42px;
+  padding: .5em 1em;
+  text-decoration:none;
+}
 
-//.git_btn:hover {
-//  filter: invert(8%) sepia(18%) saturate(4183%) hue-rotate(189deg) brightness(92%) contrast(98%);
-//}
-
-//.other_btn:before {
-//  content: url("images/github.svg");
-//  color: $accent;
-//}
-
-//.scroll {
-//  width: 30px;
-//  margin-top: 2em;
-//}
+.project_btn:hover {
+  //background-color: $secondary;
+  color: $font_primary;
+  border: 2px solid $font_primary;
+}
 
 section {
   padding: 4em 2em;
   text-align: center;
-  background: $primary;
+  //background: $primary;
 }
 
 .featured {
   position: relative;
-  background-color: #fff !important;
+  background-color: $primary;
+  margin: 2em;
+  border-radius: 1em;
 }
 
-.featured::before {
-  content: '';
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: #e5d5fa;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
+//.featured::before {
+//  content: '';
+//  position: absolute;
+//  width: 200px;
+//  height: 200px;
+//  border-radius: 50%;
+//  background: #e5d5fa;
+//  top: 0;
+//  left: 0;
+//  z-index: -1;
+//}
 
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
-  color: #6e00ff;
+  //color: #6e00ff;
+  color: $accent;
   letter-spacing: .2em;
   font-size: .85em;
 }
 
 .featured-title {
-  color: #000000;
+  color: $font_primary;
   font-weight: bold;
   font-size: 1.3em;
   margin-top: -.4em;
@@ -241,7 +261,7 @@ section {
 }
 
 .featured-desc {
-  color: #252525;
+  color: $font_secondary;
   margin-bottom: 3em;
   font-size: .9em;
   line-height: 1.8em;
@@ -249,7 +269,7 @@ section {
 }
 
 .skills-container ul li {
-  background: #ffffff;
+  background: $primary;
   padding: 2em;
   border-radius: 1em;
   margin-bottom: 1em;
@@ -283,14 +303,27 @@ section {
 }
 
 .portfolio {
-  background-color: #fff;
+  //background-color: #fff;
   margin: 4em 0 0 0;
 }
 
 .portfolio-container {
+  background-color: $primary;
   border-radius: 1em;
   margin-bottom: 2em;
+  padding: 2em;
 }
+
+//.images {
+//  padding: 1em;
+//  border-radius: 1em;
+//}
+//
+//.images:hover {
+//  background-color: $secondary;
+//  padding: 1em;
+//  border-radius: 1em;
+//}
 
 @media only screen and (min-width: 800px) {
   .cta_btn {
@@ -351,7 +384,7 @@ section {
 
 @media only screen and (min-width: 1050px) {
   .hero {
-    height: 90vh;
+    height: 85vh;
   }
 
   .nav-container {
@@ -462,7 +495,7 @@ section {
     justify-content: left;
   }
 
-  .buttons {
+  .contact_btn_group {
     position: absolute;
     margin: 5em 0 0 0;
   }
