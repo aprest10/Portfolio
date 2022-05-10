@@ -8,6 +8,7 @@
   --font_primary: #000;
   --font_secondary: #5b4b4c;
   --contact_btn_group_filter: invert(14%) sepia(97%) saturate(4965%) hue-rotate(351deg) brightness(83%) contrast(107%);
+  --image_filter: brightness(0) saturate(100%) invert(14%) sepia(97%) saturate(4965%) hue-rotate(351deg) brightness(83%) contrast(107%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,6 +20,7 @@
     --font_primary: #fff;
     --font_secondary: #72829f;
     --contact_btn_group_filter: invert(41%) sepia(50%) saturate(517%) hue-rotate(183deg) brightness(95%) contrast(89%);
+    --image_filter: brightness(0) saturate(100%) invert(41%) sepia(50%) saturate(517%) hue-rotate(183deg) brightness(95%) contrast(89%);
   }
 }
 body {
@@ -277,6 +279,14 @@ section {
   border-radius: 1em;
   margin-bottom: 2em;
   padding: 2em;
+}
+
+.featured_pic {
+  filter: var(--image_filter);
+}
+
+.images:hover {
+  filter: var(--image_filter);
 }
 
 @media only screen and (min-width: 800px) {
