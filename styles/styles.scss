@@ -3,12 +3,6 @@
 
 // mobile-first styling: all scss is for mobile devices until media quires
 
-//--primary: #0a192f;
-////--primary: #6e00ff;
-//--accent: #64ffda;
-//--p_font: #8892b0;
-//--a_font: #ccd6f6;
-
 :root {
   --bg: #f5ced0;
   --primary: #e4bcbe;
@@ -286,15 +280,15 @@ section {
     margin: 0 auto;
 
     &.one {
-      width: 50px;
+      width: 10em;
     }
 
     &.two {
-      width: 100px;
+      width: 10em;
     }
 
     &.three {
-      width: 60px;
+      width: 6em;
     }
   }
 
