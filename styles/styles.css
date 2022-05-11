@@ -7,8 +7,7 @@
   --accent: #da0510;
   --font_primary: #000;
   --font_secondary: #5b4b4c;
-  --contact_btn_group_filter: invert(14%) sepia(97%) saturate(4965%) hue-rotate(351deg) brightness(83%) contrast(107%);
-  --image_filter: brightness(0) saturate(100%) invert(14%) sepia(97%) saturate(4965%) hue-rotate(351deg) brightness(83%) contrast(107%);
+  --contact_btn_group_filter: invert(10%) sepia(96%) saturate(7090%) hue-rotate(354deg) brightness(85%) contrast(100%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -282,14 +281,6 @@ section {
   border-radius: 1em;
   margin-bottom: 2em;
   padding: 2em;
-}
-
-.featured_pic {
-  filter: var(--image_filter);
-}
-
-.images:hover {
-  filter: var(--image_filter);
 }
 
 @media only screen and (min-width: 800px) {

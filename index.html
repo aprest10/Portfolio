@@ -15,48 +15,6 @@
 
 
 <body>
-    <!------------------- Nav -------------------->
-<!--    <div class="nav-container">-->
-<!--        <header>-->
-<!--            <a href="index.html" class="logo">-->
-<!--                <svg width="80"-->
-<!--                     height="80"-->
-<!--                     viewBox="0 0 148 170"-->
-<!--                     fill="none"-->
-<!--                     xmlns="http://www.w3.org/2000/svg">-->
-<!--                &lt;!&ndash;<rect width="148"-->
-<!--                      height="170"-->
-<!--                      fill="none"/>&ndash;&gt;-->
-<!--                <path id="A"-->
-<!--                      d="M90.488 104.536H55.608L48.568 127H37.624L66.296-->
-<!--                        38.872H80.504L109.176 127H97.528L90.488 104.536ZM58.488-->
-<!--                        95.32H87.608L73.144 48.216L58.488 95.32Z"-->
-<!--                      fill="#64FFDA"/>-->
-<!--                <path id="Sides"-->
-<!--                      d="M4.88784 45.0981L74 5.19615L143.112 45.0981V124.902L74-->
-<!--                        164.804L4.88784 124.902L4.88784 45.0981Z"-->
-<!--                      stroke="#64FFDA"-->
-<!--                      stroke-width="9"/>-->
-<!--                </svg>-->
-<!--            </a>-->
-
-<!--            <nav>-->
-<!--                <ul>-->
-<!--                    <li><p><</p><a href="#">Projects</a><p>/></p></li>-->
-<!--                    <li><p><</p><a href="#">About</a><p>/></p></li>-->
-<!--                    <li><p><</p><a href="#">Contact</a><p>/></p></li>-->
-<!--                </ul>-->
-<!--            </nav>-->
-<!--        </header>-->
-
-<!--        <div class="social-header">-->
-<!--            <ul>-->
-<!--                <li><a href="#"><img src="styles/images/github.svg" alt="github"></a></li>-->
-<!--                <li><a href="#"><img src="styles/images/github.svg" alt="dribbble"></a></li>-->
-<!--                <li><a href="#"><img src="styles/images/github.svg" alt="dribbble"></a></li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </div>-->
     <!------------------- Hero -------------------->
     <div class="hero">
         <div class="content">
@@ -125,12 +83,21 @@
         </div>
 
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <a href="https://aprest10.github.io/algorithmVisualizer/" class="featured_pic" target="_blank" rel="noopener noreferrer">
-            <lottie-player
-                    src="https://assets1.lottiefiles.com/packages/lf20_mcpnydwp.json"
-                    background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay>
-            </lottie-player>
-        </a>
+        <a href="https://aprest10.github.io/algorithmVisualizer/" id="lottie" class="featured_pic" target="_blank" rel="noopener noreferrer"></a>
+
+        <script>
+            function changeMaze() {
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.getElementById('lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/maze-dark.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
+                }
+                else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                    document.getElementById('lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/maze-light.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
+                }
+            }
+
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', changeMaze)
+        </script>
+
     </section>
 
     <!------------------- About -------------------->
@@ -141,7 +108,7 @@
                     <div class="icon-container one">
                         <picture>
                             <source srcset="styles/images/code-dark-icon.svg" media="(prefers-color-scheme:dark)">
-                            <img src="styles/images/code-light-icon.svg">
+                            <img src="styles/images/code-light-icon.svg" alt="icon 1">
                         </picture>
 <!--                        <img src="styles/images/icon-ux.svg" alt="icon 1">-->
                     </div>
@@ -155,7 +122,7 @@
                     <div class="icon-container two">
                         <picture>
                             <source srcset="styles/images/font-end-dark_icon.svg" media="(prefers-color-scheme:dark)">
-                            <img src="styles/images/font-end-light_icon.svg">
+                            <img src="styles/images/font-end-light_icon.svg" alt="icon 2">
                         </picture>
 <!--                        <img src="styles/images/icon-frontend.svg" alt="icon 2">-->
                     </div>
@@ -169,7 +136,7 @@
                     <div class="icon-container three">
                         <picture>
                             <source srcset="styles/images/back-end-dark_icon.svg" media="(prefers-color-scheme:dark)">
-                            <img src="styles/images/back-end-light_icon.svg">
+                            <img src="styles/images/back-end-light_icon.svg" alt="icon 3">
                         </picture>
 <!--                        <img src="styles/images/icon-logo.svg" alt="icon 3">-->
                     </div>
