@@ -365,7 +365,7 @@ section {
 
 @media only screen and (min-width: 1250px) {
   section {
-    padding: 10em 10em 4em 10em;
+    padding: 2em 10em;
   }
 
   .hero .content {
@@ -374,9 +374,9 @@ section {
 }
 
 @media only screen and (min-width: 1550px) {
-  section {
-    padding: 10em 20em 4em 20em;
-  }
+  //section {
+  //  padding: 10em 20em 4em 20em;
+  //}
 
   .hero .content {
     position: relative;
