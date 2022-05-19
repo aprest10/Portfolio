@@ -70,37 +70,36 @@
             <div class="inner transition2">
                 <p class="subtitle">Featured Project</p>
 
-                <a href="https://aprest10.github.io/sortingVisualizer/" class="featured-title" target="_blank" rel="noopener noreferrer">Sorting Visualizer</a>
+                <a href="https://github.com/aprest10/chatroom" class="featured-title" target="_blank" rel="noopener noreferrer">Chatroom</a>
 
-                <p class="featured-desc">A mobile friendly website showcasing multiple sorting algorithms. </p>
+                <p class="featured-desc">A chatroom application build entirely in C.</p>
                 <div class="project_btn_group">
-                    <a href="https://github.com/aprest10/sortingVisualizer" class="project_btn" target="_blank" rel="noopener noreferrer">Github</a>
-                    <a href="https://aprest10.github.io/sortingVisualizer/" class="project_btn" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    <a href="https://github.com/aprest10/chatroom" class="project_btn" target="_blank" rel="noopener noreferrer">Github</a>
                 </div>
             </div>
         </div>
 
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <a href="https://aprest10.github.io/sortingVisualizer/" id="sorting-lottie" target="_blank" rel="noopener noreferrer"></a>
+        <a href="https://github.com/aprest10/chatroom" id="chat-lottie" target="_blank" rel="noopener noreferrer"></a>
 
         <script>
             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                document.getElementById('sorting-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/sorting-dark.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
+                document.getElementById('chat-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/chat-dark.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
             }
             else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-                document.getElementById('sorting-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/sorting-light.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
+                document.getElementById('chat-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/chat-light.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
             }
 
-            function changeSorting() {
+            function changeChat() {
                 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                    document.getElementById('sorting-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/sorting-dark.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
+                    document.getElementById('chat-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/chat-dark.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
                 }
                 else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-                    document.getElementById('sorting-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/sorting-light.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
+                    document.getElementById('chat-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/chat-light.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
                 }
             }
 
-            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', changeSorting)
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', changeChat)
         </script>
 
     </section>
@@ -153,10 +152,11 @@
 
     <!------------------- Portfolio -------------------->
     <section class="portfolio">
+        <!------------------- Geoguessr -------------------->
         <div class="portfolio-container transition3">
             <div class="portfolio-left">
                 <div class="inner">
-                    <p class="subtitle">Neural Network</p>
+                    <p class="subtitle">Python/Neural Network</p>
                     <a href="https://github.com/aprest10/geoguessr-class-project" class="featured-title" target="_blank" rel="noopener noreferrer">Geoguessr Project</a>
                     <p class="featured-desc">Group project where I was the lead programmer. I developed the neural
                         network architecture for the project. I worked with a teammate to train up the model and
@@ -170,20 +170,36 @@
                 </div>
             </div>
 
-            <a href="https://github.com/aprest10/geoguessr-class-project" target="_blank" rel="noopener noreferrer">
-                <picture>
-                    <source srcset="styles/images/geoguessr-dark_icon.svg" media="(prefers-color-scheme:dark)">
-                    <img src="styles/images/geoguessr-light_icon.svg" alt="geoguessr">
-                </picture>
-            </a>
+            <a href="https://github.com/aprest10/geoguessr-class-project" id="geo-lottie" target="_blank" rel="noopener noreferrer"></a>
+
+            <script>
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.getElementById('geo-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/geoguessr-dark.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
+                }
+                else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                    document.getElementById('geo-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/geoguessr-light.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
+                }
+
+                function changeGeo() {
+                    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                        document.getElementById('geo-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/geoguessr-dark.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
+                    }
+                    else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                        document.getElementById('geo-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/geoguessr-light.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
+                    }
+                }
+
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', changeGeo)
+            </script>
         </div>
 
+        <!------------------- Sorting -------------------->
         <div class="portfolio-container transition3">
             <div class="portfolio-left">
                 <div class="inner">
-                    <p class="subtitle">Data Structures</p>
+                    <p class="subtitle">JavaScript</p>
                     <a href="https://aprest10.github.io/sortingVisualizer/" class="featured-title" target="_blank" rel="noopener noreferrer">Sorting Visualizer</a>
-                    <p class="featured-desc">Lorem ipsum dolor sit amet.</p>
+                    <p class="featured-desc">A mobile friendly website showcasing multiple sorting algorithms.</p>
                     <div class="project_btn_group">
                         <a href="https://github.com/aprest10/sortingVisualizer" class="project_btn" target="_blank" rel="noopener noreferrer">Github</a>
                         <a href="https://aprest10.github.io/sortingVisualizer/" class="project_btn" target="_blank" rel="noopener noreferrer">Live Demo</a>
@@ -191,7 +207,100 @@
                 </div>
             </div>
 
+            <a href="https://aprest10.github.io/sortingVisualizer/" id="sorting-lottie" target="_blank" rel="noopener noreferrer"></a>
 
+            <script>
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.getElementById('sorting-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/sorting-dark.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
+                }
+                else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                    document.getElementById('sorting-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/sorting-light.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
+                }
+
+                function changeSorting() {
+                    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                        document.getElementById('sorting-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/sorting-dark.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
+                    }
+                    else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                        document.getElementById('sorting-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/sorting-light.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
+                    }
+                }
+
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', changeSorting)
+            </script>
+        </div>
+
+        <!------------------- Pathfinder -------------------->
+        <div class="portfolio-container transition3">
+            <div class="portfolio-left">
+                <div class="inner">
+                    <p class="subtitle">React</p>
+                    <a href="https://aprest10.github.io/pathfinder/" class="featured-title" target="_blank" rel="noopener noreferrer">PathFinder</a>
+                    <p class="featured-desc">PathFinder is a React app that visually displays Dijkstra's pathfinding algorithm.</p>
+                    <div class="project_btn_group">
+                        <a href="https://github.com/aprest10/pathfinder" class="project_btn" target="_blank" rel="noopener noreferrer">Github</a>
+                        <a href="https://aprest10.github.io/pathfinder/" class="project_btn" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://aprest10.github.io/pathfinder/" id="path-lottie" target="_blank" rel="noopener noreferrer"></a>
+
+            <script>
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.getElementById('path-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/pathfinder-dark.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
+                }
+                else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                    document.getElementById('path-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/pathfinder-light.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
+                }
+
+                function changePath() {
+                    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                        document.getElementById('path-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/pathfinder-dark.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
+                    }
+                    else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                        document.getElementById('path-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/pathfinder-light.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
+                    }
+                }
+
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', changePath)
+            </script>
+        </div>
+
+        <!------------------- Bills-R-Us -------------------->
+        <div class="portfolio-container transition3">
+            <div class="portfolio-left">
+                <div class="inner">
+                    <p class="subtitle">C</p>
+                    <a href="https://github.com/aprest10/Billing-System" class="featured-title" target="_blank" rel="noopener noreferrer">Billing System</a>
+                    <p class="featured-desc">A C program that creates and stores invoices for different users. Invoices are stored in a file named 'Invoices.dat'.</p>
+                    <div class="project_btn_group">
+                        <a href="https://github.com/aprest10/Billing-System" class="project_btn" target="_blank" rel="noopener noreferrer">Github</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://github.com/aprest10/Billing-System" id="billing-lottie" target="_blank" rel="noopener noreferrer"></a>
+
+            <script>
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.getElementById('billing-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/billing-dark.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
+                }
+                else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                    document.getElementById('billing-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/billing-light.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
+                }
+
+                function changeBilling() {
+                    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                        document.getElementById('billing-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/billing-dark.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
+                    }
+                    else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                        document.getElementById('billing-lottie').innerHTML = '<lottie-player class="lottie" src="styles/images/billing-light.json" background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>'
+                    }
+                }
+
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', changeBilling)
+            </script>
         </div>
     </section>
 
